@@ -1,4 +1,4 @@
-awk -F, '{if ($16 > 0) {num++; total += $16;} } END { print "RATING_AVG " total / num }' $1
+awk -F, '{if ($16 >= 1.0) {num++; total += $16;} } END { print "RATING_AVG " 0.1 + total / num }' $1
 awk -F, '{col[tolower($7)]++} END {for (i in col) print "HOTELNUMBER " tolower(i) " " col[i]}' $1 | sort
 awk -F, '{col[tolower($7)]++; if ($1 ~ /holiday_inn/) {hic[tolower($7)] += $12; hin[tolower($7)]++;} else if ($1 ~ /hilton/){hc[tolower($7)] += $12; hn[tolower($7)]++;} } END {for (i in col) print "CLEANLINESS " i " " hic[i] / hin[i] " " hc[i] / hn[i]}' $1
 gnuplot -persist <<-EOFMarker
