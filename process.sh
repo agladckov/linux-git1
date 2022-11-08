@@ -7,5 +7,5 @@ set output 'graph.png'
 set title "Correlation between Cleanliness and overall rating" font ",12" textcolor rgbcolor "royalblue"
 set pointsize 1
 set datafile separator ','
-plot $1 using 16, 10 with linespoints
+plot '$1' using 16, 10 with linespoints
 EOFMarker
