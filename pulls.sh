@@ -34,7 +34,7 @@ curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=6" -o /tmp/info6.json
 
-cat /tmp/info0.json /tmp/info1.json /tmp/info2.json /tmp/info3.json /tmp/info4.json /tmp/info5.json /tmp/info6.json > /tmp/info.json
+jq -s 'flatten' /tmp/info0.json /tmp/info1.json /tmp/info2.json /tmp/info3.json /tmp/info4.json /tmp/info5.json /tmp/info6.json > /tmp/info.json
 name="$1"
 num=$(jq --arg NAME "$name" '.[] | select(.user.login==$NAME) | .number' /tmp/info.json | wc -l)
 echo "PULLS ${num}"
