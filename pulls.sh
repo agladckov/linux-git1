@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
