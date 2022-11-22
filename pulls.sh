@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-token="$(<./github_token)"
+token="$(</home/users/agladckov/linux-git1/github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=0" -o /tmp/info0.json
