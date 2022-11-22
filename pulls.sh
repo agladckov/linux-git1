@@ -4,32 +4,26 @@ curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=0" -o /tmp/info0.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=1" -o /tmp/info1.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=2" -o /tmp/info2.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=3" -o /tmp/info3.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=4" -o /tmp/info4.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page5" -o /tmp/info5.json
 
-token="$(<./github_token)"
 curl -H "Accept: application/vnd.github+json" \
 -H "Authorization: Bearer ${token}" \
 "https://api.github.com/repos/datamove/linux-git2/pulls?state=all&per_page=100&page=6" -o /tmp/info6.json
