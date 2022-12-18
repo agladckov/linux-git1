@@ -1,0 +1,5 @@
+- hosts: all
+
+  tasks:
+  - name: find disk space available.
+    command: df -hPT
