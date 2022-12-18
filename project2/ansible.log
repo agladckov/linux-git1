@@ -1,0 +1,14 @@
+[DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the 
+controller starting with Ansible 2.12. Current version: 3.6.9 (default, Jun 29 
+2022, 11:45:57) [GCC 8.4.0]. This feature will be removed from ansible-core in 
+version 2.12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+/home/users/agladckov/linux-git1/ansenv/lib/python3.6/site-packages/ansible/parsing/vault/__init__.py:44: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography and will be removed in a future release.
+  from cryptography.exceptions import InvalidSignature
+51.250.19.234 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
