@@ -1,0 +1,16 @@
+---
+- hosts: all
+  vars_files: ./secret.yml
+  vars:
+    message: "{{ lookup('file', 'send.txt') }}"
+  tasks:
+  - name: Sending an email using Ansible
+    mail:
+      host: smtp.mail.ru
+      port: 465
+      username: agladckov@mail.ru
+      password: "{{ p }}"
+      from: agladckov@mail.ru
+      to: a.gladckov@gmail.com
+      subject: System information from host
+      body: "{{ message }}"

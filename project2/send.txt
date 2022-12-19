@@ -1,0 +1,10 @@
+Date: 2022-12-19
+Timezone: UTC
+All Interface List: ['lo', 'eth0']
+All IP: ['10.129.0.16']
+Gateway: 10.129.0.1
+Eth0 MAC: d0:0d:2f:a8:f7:d6
+["Distribution: Debian", "Release: bullseye", "Distribution Version: 11", "Kernel: 5.10.0-19-amd64", "Architecture: x86_64", ""]CPU: ['0', 'GenuineIntel', 'Intel Xeon Processor (Icelake)', '1', 'GenuineIntel', 'Intel Xeon Processor (Icelake)']
+CPU Core: 1
+RAM: 1982
+SWAP: 0

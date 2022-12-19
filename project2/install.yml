@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+   - name: update&install basic programs
+     apt: update_cache=yes name=util-linux state=latest
+     apt: update_cache=yes name=i-nex state=latest
+     apt: update_cache=yes name=hwinfo state=latest  
