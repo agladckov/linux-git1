@@ -12,3 +12,4 @@ To use the script, you should specify your SMTP server configuration, sender ema
 Also, you should write down your email password in ```secret.yml``` using the command ```ansible-vault create secret.yml``` and set up a password for it.
 
 The code reports about host's time, basic network, CPU, RAM facilities and sends it using specified email.
+Sample output can be seen at ```send.txt```.
