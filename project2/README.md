@@ -4,10 +4,11 @@ This code allows to install popular hardware-scanning programs, learn basic info
 
 The login and password for an email account are safely stored in a file secret.yml using encryption.
 
-To use the script, you should specify your SMTP server configuration, sender email and ports should be specified at file send.yml.
- Also, you should store your email password in file credentials.yml using the command ```ansible-vault create secret.yml```.
+## Details
 
- 
-The code installs necessary applications, collects information about OS, users, hardware, network and sends it.
+Programs being installed: lscpu, lshw, i-nex, hwinfo.
 
+To use the script, you should specify your SMTP server configuration, sender email and ports at file ```send.yml```.
+Also, you should write down your email password in ```secret.yml``` using the command ```ansible-vault create secret.yml``` and set up a password for it.
 
+The code reports about host's time, basic network, CPU, RAM facilities and sends it using specified email.
