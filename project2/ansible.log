@@ -7,22 +7,13 @@
     "changed": false,
     "ping": "pong"
 }
-2022-12-19 00:52:15,987 p=16557 u=agladckov n=ansible | 51.250.18.110 | SUCCESS => {
+2022-12-19 01:54:22,133 p=18179 u=agladckov n=ansible | 51.250.18.110 | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python3"
     },
     "changed": false,
     "ping": "pong"
 }
-/home/users/agladckov/ansenv/lib/python3.6/site-packages/ansible/parsing/vault/__init__.py:44: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography and will be removed in a future release.
-  from cryptography.exceptions import InvalidSignature
-[WARNING]: While constructing a mapping from /home/users/agladckov/linux-
-git1/project2/install.yml, line 3, column 6, found a duplicate dict key (apt).
-Using last defined value only.
-2022-12-19 00:52:16,492 p=16581 u=agladckov n=ansible | [WARNING]: While constructing a mapping from /home/users/agladckov/linux-
-git1/project2/install.yml, line 3, column 6, found a duplicate dict key (apt).
-Using last defined value only.
-
  ____________
 < PLAY [all] >
  ------------
@@ -32,7 +23,7 @@ Using last defined value only.
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:16,552 p=16581 u=agladckov n=ansible |  ____________
+2022-12-19 01:54:22,747 p=18203 u=agladckov n=ansible |  ____________
 < PLAY [all] >
  ------------
         \   ^__^
@@ -51,7 +42,7 @@ Using last defined value only.
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:16,585 p=16581 u=agladckov n=ansible |  ________________________
+2022-12-19 01:54:22,781 p=18203 u=agladckov n=ansible |  ________________________
 < TASK [Gathering Facts] >
  ------------------------
         \   ^__^
@@ -61,8 +52,10 @@ Using last defined value only.
                 ||     ||
 
 
+/home/users/agladckov/ansenv/lib/python3.6/site-packages/ansible/parsing/vault/__init__.py:44: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography and will be removed in a future release.
+  from cryptography.exceptions import InvalidSignature
 ok: [51.250.18.110]
-2022-12-19 00:52:17,403 p=16581 u=agladckov n=ansible | ok: [51.250.18.110]
+2022-12-19 01:54:23,623 p=18203 u=agladckov n=ansible | ok: [51.250.18.110]
  ______________________________________
 < TASK [update&install basic programs] >
  --------------------------------------
@@ -72,7 +65,7 @@ ok: [51.250.18.110]
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:17,439 p=16581 u=agladckov n=ansible |  ______________________________________
+2022-12-19 01:54:23,659 p=18203 u=agladckov n=ansible |  ______________________________________
 < TASK [update&install basic programs] >
  --------------------------------------
         \   ^__^
@@ -83,7 +76,7 @@ ok: [51.250.18.110]
 
 
 ok: [51.250.18.110]
-2022-12-19 00:52:18,695 p=16581 u=agladckov n=ansible | ok: [51.250.18.110]
+2022-12-19 01:54:24,934 p=18203 u=agladckov n=ansible | ok: [51.250.18.110]
  ____________
 < PLAY RECAP >
  ------------
@@ -93,7 +86,7 @@ ok: [51.250.18.110]
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:18,733 p=16581 u=agladckov n=ansible |  ____________
+2022-12-19 01:54:24,974 p=18203 u=agladckov n=ansible |  ____________
 < PLAY RECAP >
  ------------
         \   ^__^
@@ -104,12 +97,12 @@ ok: [51.250.18.110]
 
 
 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-19 00:52:18,734 p=16581 u=agladckov n=ansible | 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-19 01:54:24,975 p=18203 u=agladckov n=ansible | 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
 /home/users/agladckov/ansenv/lib/python3.6/site-packages/ansible/parsing/vault/__init__.py:44: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography and will be removed in a future release.
   from cryptography.exceptions import InvalidSignature
-ERROR! A malformed block was encountered while loading a block. The ds ([AnsibleMapping([('name', 'get hostname'), ('copy', AnsibleMapping([('dest', './hostname'), ('content', '{{ ansible_hostname }}')]))]), AnsibleMapping([('name', 'get date and time'), ('vars', AnsibleMapping([('msg', 'Date: {{ ansible_date_time.date }}\nTimezone: {{ ansible_date_time.tz }}\n')])), ('copy', AnsibleMapping([('dest', './date_time'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'network info'), ('vars', AnsibleMapping([('msg', 'All Interface List: {{ ansible_interfaces }}\nAll IP: {{ ansible_all_ipv4_addresses }}\nGateway: {{ ansible_default_ipv4.gateway }}\nEth0 MAC: {{ ansible_eth0.macaddress }}\n')])), ('copy', AnsibleMapping([('dest', './network'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'OS and Kernel info'), ('vars', AnsibleMapping([('msg', 'Distribution: {{ ansible_distribution }}\nRelease: {{ ansible_distribution_release }}\nDistribution Version: {{ ansible_distribution_version }}\nKernel: {{ ansible_kernel }}\nArchitecture: {{ ansible_architecture }}\n')])), ('copy', AnsibleMapping([('dest', './os_kernel'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'get hardware info'), ('vars', AnsibleMapping([('msg', 'CPU: {{ ansible_processor }}\nCPU Core: {{ ansible_processor_cores }}\nRAM: {{ ansible_memtotal_mb }}\nSWAP: {{ ansible_memory_mb.swap.total }}\n')])), ('copy', AnsibleMapping([('dest', './hardware'), ('content', '{{ msg }}')]))]), 'name', AnsibleMapping([('name', 'unite files in a node'), ('ansible.builtin.shell', 'cat hostname date_time network os_kernel hardware > send_info.txt')]), AnsibleMapping([('name', 'collect files from nodes'), ('ansible.builtin.fetch', AnsibleMapping([('src', 'send_info.txt'), ('dest', 'info/info_{{ inventory_hostname }}.txt'), ('flat', True)]))])]) should be a dict but was a <class 'list'>
-2022-12-19 00:52:19,322 p=16615 u=agladckov n=ansible | ERROR! A malformed block was encountered while loading a block. The ds ([AnsibleMapping([('name', 'get hostname'), ('copy', AnsibleMapping([('dest', './hostname'), ('content', '{{ ansible_hostname }}')]))]), AnsibleMapping([('name', 'get date and time'), ('vars', AnsibleMapping([('msg', 'Date: {{ ansible_date_time.date }}\nTimezone: {{ ansible_date_time.tz }}\n')])), ('copy', AnsibleMapping([('dest', './date_time'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'network info'), ('vars', AnsibleMapping([('msg', 'All Interface List: {{ ansible_interfaces }}\nAll IP: {{ ansible_all_ipv4_addresses }}\nGateway: {{ ansible_default_ipv4.gateway }}\nEth0 MAC: {{ ansible_eth0.macaddress }}\n')])), ('copy', AnsibleMapping([('dest', './network'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'OS and Kernel info'), ('vars', AnsibleMapping([('msg', 'Distribution: {{ ansible_distribution }}\nRelease: {{ ansible_distribution_release }}\nDistribution Version: {{ ansible_distribution_version }}\nKernel: {{ ansible_kernel }}\nArchitecture: {{ ansible_architecture }}\n')])), ('copy', AnsibleMapping([('dest', './os_kernel'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'get hardware info'), ('vars', AnsibleMapping([('msg', 'CPU: {{ ansible_processor }}\nCPU Core: {{ ansible_processor_cores }}\nRAM: {{ ansible_memtotal_mb }}\nSWAP: {{ ansible_memory_mb.swap.total }}\n')])), ('copy', AnsibleMapping([('dest', './hardware'), ('content', '{{ msg }}')]))]), 'name', AnsibleMapping([('name', 'unite files in a node'), ('ansible.builtin.shell', 'cat hostname date_time network os_kernel hardware > send_info.txt')]), AnsibleMapping([('name', 'collect files from nodes'), ('ansible.builtin.fetch', AnsibleMapping([('src', 'send_info.txt'), ('dest', 'info/info_{{ inventory_hostname }}.txt'), ('flat', True)]))])]) should be a dict but was a <class 'list'>
+ERROR! A malformed block was encountered while loading a block. The ds ([AnsibleMapping([('name', 'get date and time'), ('vars', AnsibleMapping([('msg', 'Date: {{ ansible_date_time.date }}\nTimezone: {{ ansible_date_time.tz }}\n')])), ('copy', AnsibleMapping([('dest', './date_time'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'network info'), ('vars', AnsibleMapping([('msg', 'All Interface List: {{ ansible_interfaces }}\nAll IP: {{ ansible_all_ipv4_addresses }}\nGateway: {{ ansible_default_ipv4.gateway }}\nEth0 MAC: {{ ansible_eth0.macaddress }}\n')])), ('copy', AnsibleMapping([('dest', './network'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'OS and Kernel info'), ('vars', AnsibleMapping([('msg', 'Distribution: {{ ansible_distribution }}\nRelease: {{ ansible_distribution_release }}\nDistribution Version: {{ ansible_distribution_version }}\nKernel: {{ ansible_kernel }}\nArchitecture: {{ ansible_architecture }}\n')])), ('copy', AnsibleMapping([('dest', './os_kernel'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'get hardware info'), ('vars', AnsibleMapping([('msg', 'CPU: {{ ansible_processor }}\nCPU Core: {{ ansible_processor_cores }}\nRAM: {{ ansible_memtotal_mb }}\nSWAP: {{ ansible_memory_mb.swap.total }}\n')])), ('copy', AnsibleMapping([('dest', './hardware'), ('content', '{{ msg }}')]))]), 'name', AnsibleMapping([('name', 'unite files in a node'), ('ansible.builtin.shell', 'cat hostname date_time network os_kernel hardware > send_info.txt')]), AnsibleMapping([('name', 'collect files from nodes'), ('ansible.builtin.fetch', AnsibleMapping([('src', 'send_info.txt'), ('dest', 'info/info_{{ inventory_hostname }}.txt'), ('flat', True)]))])]) should be a dict but was a <class 'list'>
+2022-12-19 01:54:25,549 p=18237 u=agladckov n=ansible | ERROR! A malformed block was encountered while loading a block. The ds ([AnsibleMapping([('name', 'get date and time'), ('vars', AnsibleMapping([('msg', 'Date: {{ ansible_date_time.date }}\nTimezone: {{ ansible_date_time.tz }}\n')])), ('copy', AnsibleMapping([('dest', './date_time'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'network info'), ('vars', AnsibleMapping([('msg', 'All Interface List: {{ ansible_interfaces }}\nAll IP: {{ ansible_all_ipv4_addresses }}\nGateway: {{ ansible_default_ipv4.gateway }}\nEth0 MAC: {{ ansible_eth0.macaddress }}\n')])), ('copy', AnsibleMapping([('dest', './network'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'OS and Kernel info'), ('vars', AnsibleMapping([('msg', 'Distribution: {{ ansible_distribution }}\nRelease: {{ ansible_distribution_release }}\nDistribution Version: {{ ansible_distribution_version }}\nKernel: {{ ansible_kernel }}\nArchitecture: {{ ansible_architecture }}\n')])), ('copy', AnsibleMapping([('dest', './os_kernel'), ('content', '{{ msg }}')]))]), AnsibleMapping([('name', 'get hardware info'), ('vars', AnsibleMapping([('msg', 'CPU: {{ ansible_processor }}\nCPU Core: {{ ansible_processor_cores }}\nRAM: {{ ansible_memtotal_mb }}\nSWAP: {{ ansible_memory_mb.swap.total }}\n')])), ('copy', AnsibleMapping([('dest', './hardware'), ('content', '{{ msg }}')]))]), 'name', AnsibleMapping([('name', 'unite files in a node'), ('ansible.builtin.shell', 'cat hostname date_time network os_kernel hardware > send_info.txt')]), AnsibleMapping([('name', 'collect files from nodes'), ('ansible.builtin.fetch', AnsibleMapping([('src', 'send_info.txt'), ('dest', 'info/info_{{ inventory_hostname }}.txt'), ('flat', True)]))])]) should be a dict but was a <class 'list'>
  ____________
 < PLAY [all] >
  ------------
@@ -119,7 +112,7 @@ ERROR! A malformed block was encountered while loading a block. The ds ([Ansible
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:21,971 p=16624 u=agladckov n=ansible |  ____________
+2022-12-19 01:54:28,175 p=18246 u=agladckov n=ansible |  ____________
 < PLAY [all] >
  ------------
         \   ^__^
@@ -138,7 +131,7 @@ ERROR! A malformed block was encountered while loading a block. The ds ([Ansible
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:22,007 p=16624 u=agladckov n=ansible |  ________________________
+2022-12-19 01:54:28,210 p=18246 u=agladckov n=ansible |  ________________________
 < TASK [Gathering Facts] >
  ------------------------
         \   ^__^
@@ -151,7 +144,7 @@ ERROR! A malformed block was encountered while loading a block. The ds ([Ansible
 /home/users/agladckov/ansenv/lib/python3.6/site-packages/ansible/parsing/vault/__init__.py:44: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography and will be removed in a future release.
   from cryptography.exceptions import InvalidSignature
 ok: [51.250.18.110]
-2022-12-19 00:52:22,843 p=16624 u=agladckov n=ansible | ok: [51.250.18.110]
+2022-12-19 01:54:29,044 p=18246 u=agladckov n=ansible | ok: [51.250.18.110]
  _______________________________________
 < TASK [Sending an email using Ansible] >
  ---------------------------------------
@@ -161,7 +154,7 @@ ok: [51.250.18.110]
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:22,879 p=16624 u=agladckov n=ansible |  _______________________________________
+2022-12-19 01:54:29,084 p=18246 u=agladckov n=ansible |  _______________________________________
 < TASK [Sending an email using Ansible] >
  ---------------------------------------
         \   ^__^
@@ -172,7 +165,7 @@ ok: [51.250.18.110]
 
 
 ok: [51.250.18.110]
-2022-12-19 00:52:23,916 p=16624 u=agladckov n=ansible | ok: [51.250.18.110]
+2022-12-19 01:54:30,239 p=18246 u=agladckov n=ansible | ok: [51.250.18.110]
  ____________
 < PLAY RECAP >
  ------------
@@ -182,7 +175,7 @@ ok: [51.250.18.110]
                 ||----w |
                 ||     ||
 
-2022-12-19 00:52:23,954 p=16624 u=agladckov n=ansible |  ____________
+2022-12-19 01:54:30,291 p=18246 u=agladckov n=ansible |  ____________
 < PLAY RECAP >
  ------------
         \   ^__^
@@ -193,5 +186,5 @@ ok: [51.250.18.110]
 
 
 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-19 00:52:23,954 p=16624 u=agladckov n=ansible | 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-19 01:54:30,292 p=18246 u=agladckov n=ansible | 51.250.18.110              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 

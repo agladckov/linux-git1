@@ -1,11 +1,6 @@
 ---
  - hosts: all
    tasks:
-   - name: get hostname
-     copy:
-      dest: "./hostname"
-      content: "{{ ansible_hostname }}"
-
    - name: get date and time
      vars:
       msg: |
