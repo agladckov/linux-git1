@@ -2,7 +2,7 @@
 
 This code allows to install popular hardware-scanning programs, learn basic information about remote hosts and send it to a specific email address.
 
-The login and password for an email account are safely stored in a file secret.yml using encryption.
+The login and password for an email account are safely stored in a file ```secret.yml``` using encryption.
 
 ## Details
 
